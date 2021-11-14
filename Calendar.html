@@ -1,0 +1,61 @@
+
+<html>
+    <head>
+        <title>gsshsrnotices</title>
+    </head>
+    <body>
+    
+        <form name="More">
+
+            <select name="menu About" id="menu About">
+                <option value="nothing" selected="selected">Kindly select</option>
+                <option value="file:///Users/mithil/Documents/index.html">Home</option>
+                <option value="file:///Users/mithil/Documents/Calendar.html">Calendar</option>
+                <option value="file:///Users/mithil/Documents/Notices.html">Notices</option>
+                <option value="file:///Users/mithil/Documents/calculator.html">Calculator</option>
+                <option value="file:///Users/mithil/Documents/query.html">Query</option>">
+                <option value="file:///Users/mithil/Documents/About.html">About</option>
+    
+            </select>
+    
+        </form>
+    <script type="text/javascript">
+        var urlMenu = document.getElementById('menu About');
+        urlMenu.onchange = function() {
+            var userOption = this.options[this.selectedIndex];
+            if (userOption.value != "nothing") {
+                window.open(userOption.value, "menu About Page", "");
+    
+            }
+        }
+
+    </script>
+
+<p align="right"><a href="file:///Users/mithil/Documents/index.html" target="_blank" rel="noopener noreferrer">Home!</a>.</p>
+
+        <br>
+        <centre><h1>This will contain all upcoming Calendar notices from school for 7th standard</h1></centre>
+        <hr>
+        <p>
+        <h3>Calendar Event</h3>
+        08-11-2021<br><br>
+        Term II Portion Starts
+        </p>
+        <hr>
+
+        <p>
+            <h3>Calendar Event</h3>
+            06-11-2021<br><br>
+            Diwali Holiday
+        </p> 
+        <hr>
+
+        <p>
+            <h3>Calendar Event</h3>
+            05-11-2021<br><br>
+            Balipadyami - Holiday
+        </p> 
+          
+        
+    </body>
+</html>

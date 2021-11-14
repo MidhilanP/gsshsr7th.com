@@ -1,0 +1,55 @@
+<html>
+    <head><title>G.S.S.E Notices</title></head>
+    <body>
+       <form name="More">
+
+        <select name="menu About" id="menu About">
+            <option value="nothing" selected="selected">Kindly select</option>
+            <option value="file:///Users/mithil/Documents/index.html">Home</option>
+            <option value="file:///Users/mithil/Documents/Calendar.html">Calendar</option>
+            <option value="file:///Users/mithil/Documents/Notices.html">Notices</option>
+            <option value="file:///Users/mithil/Documents/calculator.html">Calculator</option>
+            <option value="file:///Users/mithil/Documents/query.html">Query</option>">
+            <option value="file:///Users/mithil/Documents/About.html">About</option>
+
+        </select>
+
+    </form>
+    <script type="text/javascript">
+        var urlMenu = document.getElementById('menu About');
+        urlMenu.onchange = function() {
+            var userOption = this.options[this.selectedIndex];
+            if (userOption.value != "nothing") {
+                window.open(userOption.value, "menu About Page", "");
+    
+            }
+        }
+
+    </script>
+
+    </form>
+        <p align="right"><a href="file:///Users/mithil/Documents/index.html" target="_blank" rel="noopener noreferrer">Home!</a>.</p>
+        <h1>This will contain all upcoming <strong>General Notices</strong> from school for 7th standard</h1>
+<hr>
+        <p>
+        <h3>Notice</h3>
+        03-11-2021<br><br>
+        <h5> - November 4th, 2021 to November 6th, 2021</h5>
+        Dear parent,
+Kindly note that the school Admin Office will be closed from Thursday,  November 4th 2021 to Saturday, November 6th 2021 on account of Deepavali. 
+<br><br><br>
+
+Regards<br>
+Principal<br>
+GSSE
+        </p>
+        <hr>
+
+        <p>
+            <h3>Notice</h3>
+            05-11-2021<br><br>
+            Balipadyami - Holiday
+        </p>
+
+    </body>
+</html>

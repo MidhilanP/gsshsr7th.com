@@ -1,0 +1,45 @@
+<html>
+    <head><title>Query</title></head>
+<body>
+<form name="More">
+
+    <select name="menu About" id="menu About">
+        <option value="nothing" selected="selected">Kindly select</option>
+        <option value="file:///Users/mithil/Documents/index.html">Home</option>
+        <option value="file:///Users/mithil/Documents/Calendar.html">Calendar</option>
+        <option value="file:///Users/mithil/Documents/Notices.html">Notices</option>
+        <option value="file:///Users/mithil/Documents/calculator.html">Calculator</option>
+        <option value="file:///Users/mithil/Documents/query.html">Query</option>">
+        <option value="file:///Users/mithil/Documents/About.html">About</option>
+
+    </select>
+
+</form>
+    <script type="text/javascript">
+        var urlMenu = document.getElementById('menu About');
+        urlMenu.onchange = function() {
+            var userOption = this.options[this.selectedIndex];
+            if (userOption.value != "nothing") {
+                window.open(userOption.value, "menu About Page", "");
+    
+            }
+        }
+
+    </script>
+
+<FORM Action="mailto:prmidhilan@gmail.com" METHOD="POST">
+    Mail to: prmidhilan@gmail.com:<br>
+    <Br>Subject: 
+    <INPUT name="Subject" placeholder="Enter your Query in short...">
+    <Br>
+    <br>
+    Query:
+    <TEXTAREA name="Query">
+    </TEXTAREA>
+    <BR><br>
+    <INPUT type="submit" value="Submit"> 
+</FORM>
+
+
+</body>
+</html>

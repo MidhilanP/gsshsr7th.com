@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School notices</title>
+</head>
+<body>
+            <center><h1>Kindly select what type of notice you want to see</h1></center>
+
+    <form name="More">
+
+        <select name="menu About" id="menu About">
+            <option value="nothing" selected="selected">Kindly select</option>
+            <option value="https://7thnotices.netlify.app/">Home</option>
+            <option value="file:///Users/mithil/Documents/Calendar.html">Calendar</option>
+            <option value="file:///Users/mithil/Documents/Notices.html">Notices</option>
+            <option value="file:///Users/mithil/Documents/calculator.html">Calculator</option>
+            <option value="file:///Users/mithil/Documents/query.html">Query</option>">
+            <option value="file:///Users/mithil/Documents/About.html">About</option>
+
+        </select>
+
+    </form>
+    <script type="text/javascript">
+        var urlMenu = document.getElementById('menu About');
+        urlMenu.onchange = function() {
+            var userOption = this.options[this.selectedIndex];
+            if (userOption.value != "nothing") {
+                window.open(userOption.value, "menu About Page", "");
+    
+            }
+        }
+
+    </script>
+<br><br>
+
+    
+<button type="submit" name="Calender Events" onclick="window.location.href = 'file:///Users/mithil/Documents/Calendar.html';">Calendar Events</button><br><br>
+<button type="submit" name="Notices" onclick="window.location.href = 'file:///Users/mithil/Documents/Notices.html';">notices</button><br><br>
+<button type="submit" name="Calculator" onclick="window.location.href = 'file:///Users/mithil/Documents/calculator.html';">Calculator</button><br><br>
+<button type="submit" name="Query" onclick="window.location.href = 'file:///Users/mithil/Documents/query.html';">Query</button><br><br>
+<button type="submit" name="About" onclick="window.location.href = 'file:///Users/mithil/Documents/About.html';">About</button><br><br>
+
+
+</body>
+</html>
